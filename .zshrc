@@ -103,6 +103,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias vscode=open\ -a\ Visual\\\ Studio\\\ Code
+
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 DEFAULT_USER='david'
 
