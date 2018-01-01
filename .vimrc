@@ -10,5 +10,9 @@ syntax on
 set hidden
 set backspace=indent,eol,start
 set number
+set ruler
+set autoread
+set shortmess+=I
 " case insensitive search
 set ignorecase
+set smartcase
