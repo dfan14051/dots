@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='atom'
 else
-   export EDITOR='mvim'
+   export EDITOR='vim'
 fi
 
 # Compilation flags
