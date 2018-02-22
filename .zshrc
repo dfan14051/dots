@@ -61,14 +61,10 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(
     git
     brew 
-    bundler 
-    gem 
     npm 
     osx 
-    rails 
-    ruby 
-    rvm 
     z
+    python
 )
 
 
@@ -83,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='atom'
+   export EDITOR='vscode'
 else
    export EDITOR='vim'
 fi
@@ -104,6 +100,12 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vscode=open\ -a\ Visual\\\ Studio\\\ Code
+alias 3DQSAR='source activate 3DQSAR && conda env list'
+alias 491='source activate 491 && conda env list'
+alias 531='source activate 531 && conda env list'
+alias py27='source activate py27 && conda env list'
+alias tensorflow='source activate tensorflow && conda env list'
+alias base='source activate base && conda env list'
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 DEFAULT_USER='david'
@@ -118,3 +120,8 @@ POWERLEVEL9K_STATUS_VERBOSE=false
 eval $(thefuck --alias)
  export NVM_DIR='/Users/david/.nvm'
   . '/usr/local/opt/nvm/nvm.sh'
+
+export HOMEBREW_GITHUB_API_TOKEN="3b614dfb8a22257c7a0c7123eb8cff5c1c283d3e"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
