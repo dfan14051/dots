@@ -121,7 +121,5 @@ eval $(thefuck --alias)
  export NVM_DIR='/Users/david/.nvm'
   . '/usr/local/opt/nvm/nvm.sh'
 
-export HOMEBREW_GITHUB_API_TOKEN="3b614dfb8a22257c7a0c7123eb8cff5c1c283d3e"
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
