@@ -297,3 +297,6 @@ export PATH="/Users/david/anaconda2/bin:$PATH"
 export PATH="/Users/david/anaconda3/bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# added by Miniconda3 installer
+export PATH="/Users/david/miniconda3/bin:$PATH"

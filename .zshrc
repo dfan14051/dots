@@ -65,6 +65,7 @@ plugins=(
     osx 
     z
     python
+    copyzshell
 )
 
 
