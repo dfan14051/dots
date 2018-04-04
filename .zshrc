@@ -117,10 +117,12 @@ DEFAULT_USER='david'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status root_indicator background_jobs history time)
 POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_TIME_FORMAT="%D{%L:%M:%S}"
 
 eval $(thefuck --alias)
  export NVM_DIR='/Users/david/.nvm'
   . '/usr/local/opt/nvm/nvm.sh'
 
+export PATH="/usr/local/sbin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
