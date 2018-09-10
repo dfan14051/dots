@@ -1,11 +1,15 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+if [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
 
-# added by Anaconda3 4.4.0 installer
-export PATH="/Users/david/anaconda3/bin:$PATH"
+# If you come from bash you might have to change your $PATH.
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/david/.oh-my-zsh
+
+export PATH="/Users/david/miniconda3/bin:$PATH"
 
 export TERM="xterm-256color"
 
@@ -101,12 +105,6 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vscode=open\ -a\ Visual\\\ Studio\\\ Code
-alias 3DQSAR='source activate 3DQSAR && conda env list'
-alias 491='source activate 491 && conda env list'
-alias 531='source activate 531 && conda env list'
-alias py27='source activate py27 && conda env list'
-alias tensorflow='source activate tensorflow && conda env list'
-alias base='source activate base && conda env list'
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 DEFAULT_USER='david'
@@ -119,10 +117,5 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time status root_indicator
 POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_TIME_FORMAT="%D{%L:%M:%S}"
 
-eval $(thefuck --alias)
- export NVM_DIR='/Users/david/.nvm'
-  . '/usr/local/opt/nvm/nvm.sh'
-
-export PATH="/usr/local/sbin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

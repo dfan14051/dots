@@ -20,6 +20,7 @@ set incsearch
 set hlsearch
 set autoindent
 set hidden
+set number
 set switchbuf=useopen
 set backspace=indent,eol,start
 set autoread
